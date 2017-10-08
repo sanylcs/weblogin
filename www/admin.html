@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Web Admin</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/admin.js"></script>
+		<script src="js/sha1.min.js"></script>
+	</head>
+	<body>
+		<h1>Admin Access</h1>
+		<div>
+			<span>admin username<span class="required">*</span>: </span>
+			<input id="admintName" type="text" />
+		</div><br />
+		<div>
+			<span>admin password<span class="required">*</span>: </span>
+			<input id="admintPwd" type="password" />
+		</div>
+		<hr />
+		<h3>Change this admin user's password</h3>
+		<div>
+			<span>new password: </span>
+			<input id="changetNewPwd" type="password" />
+		</div>
+		<br />
+		<div>
+			<span>retype password: </span>
+			<input id="changetRetypePwd" type="password" />
+		</div><br />
+		<div>
+			<input id="changebSubmit" type="button" value="Change" />
+		</div>
+		<hr />
+		<h3>Add user</h3>
+		<div>
+			<span>username: </span>
+			<input id="addtName" type="text" />&nbsp;&nbsp;
+			<input id="addcAdmin" type="checkbox" />&nbsp;Is Admin
+		</div><br />
+		<div>
+			<span>new password: </span>
+			<input id="addtNewPwd" type="password" />
+		</div>
+		<br />
+		<div>
+			<span>retype password: </span>
+			<input id="addtRetypePwd" type="password" />
+		</div><br />
+		<div>
+			<input id="addbSubmit" type="button" value="Add" />
+		</div>
+		<hr />
+		<h3>Delete user</h3>
+		<div>
+			<span>username: </span>
+			<input id="deltName" type="text" />
+		</div><br />
+		<div>
+			<input id="delbSubmit" type="button" value="Delete" />
+		</div>
+		<hr />
+		<div>
+			<span id="tResult"></span>
+		</div>
+	</body>
+</html>
